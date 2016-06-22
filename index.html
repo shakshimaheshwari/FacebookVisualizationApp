@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content ="utf-8" http-equiv="encoding">
+  <title>D3 Graphic</title>
+  
+  <style>
+
+body {
+  background-image:url('bcg_slide-3.jpg');
+}
+
+.stroke {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.fill {
+  fill: #fff;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+
+.land {
+  fill: #222;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+      
+
+</style>
+</head>
+<body>
+  <div class = "container" style="background-color:brown;">
+      <h2 align = "center">Data Visualization for facebook friends and events
+          <fb:login-button scope="public_profile,email,user_friends,user_events" onlogin="checkLoginState();">Connect with facebook</fb:login-button></h2>
+  </div>
+    <div id ="container">
+        <div id = "chart1" style="background-color:pink; height: 800px; width: 700px; float:left;">
+            <p style="color: white; text-align:center; font-size:20px;">Figure 1: Depicting tagable/inivitable facebook friends</p>
+        </div>
+        <div id = "chart2" style="background-color:pink; height: 800px; width:650px; margin-left:800px">
+            <p style="color:white; text-align:center; font-size: 20px;">Figure 2: Interested events locations</p>
+        </div>
+    </div>
+    
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="d3.geo.polyhedron.min.js"></script>
+  <script src ="facebookmin.js"></script>
+</body>
+</html>
